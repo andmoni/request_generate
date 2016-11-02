@@ -13,23 +13,24 @@
 временное решение: 
 шаг 1. Откройте файл start.py (у кого нет расширения то просто start) в любом текстовом редакторе (например «Блокнот»).
 шаг 2. Найдите и закомментируйте строки (поставить знак # в начале строки)
-try:
-    from lxml import etree as ET
-except ImportError:
-    import xml.etree.ElementTree as ET
+<code>try:</code>
+<code>    from lxml import etree as ET</code>
+<code>except ImportError:</code>
+<code>    import xml.etree.ElementTree as ET</code>
 шаг 3. раскоментируйте строку (удалите знак # вначале строки)
-#import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET</code>
 должно в итоге получиться что-то похожее на это:
-#try:
-#    from lxml import etree as ET
-#except ImportError:
-#    import xml.etree.ElementTree as ET
-import xml.etree.ElementTree as ET
+<code>#try:</code>
+<code>#    from lxml import etree as ET</code>
+<code>#except ImportError:</code>
+<code>#    import xml.etree.ElementTree as ET</code>
+<code>import xml.etree.ElementTree as ET</code>
 шаг 4. Сохраните файл программы.
 
 Сгенерированные запросы будут создаваться нормально, но при открытии Word будет ругаться на ошибку xml-содержимого, игнорируем ее и просим все равно открыть файл восстановив его (ок -> да). Запрос откроется в новым документом (как шаблон). 
 После его можно сохранить если нужен в будущем или не сохранять если не нужен.
 В офисе ниже 2007 не пробовал. 
+постоянное решение: Обновите microsoft office версией не ниже 2013
 
 Установка и запуск:
 Копируем папку с программой на компьютер. 
